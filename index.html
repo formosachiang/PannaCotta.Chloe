@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>PannaCotta.Chloe</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="homapage.css">
+        <style type="text/css"></style>
+    </head>
+    <body>
+        <header>
+        <!-- navbar & rwd sidebar -->
+            <a href="http://pannacottachloe.com/index.html"><img class="logo" src="images/brandlogo_noborder.png" alt="logo"></a>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="#story-container">Story</a></li>
+                    <li><a href="#menu-container">Menu</a></li>
+                    <li><a href="#about-container">About</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="http://pannacottachloe.com/menu.html"><button class="buy_btn">BUY</button></a>
+            <a href="http://pannacottachloe.com/menu.html" class="mobile_buybtn"><i class="material-icons">shopping_cart</i></a>
+            <a onclick="openNav()" class="menu" href="#">
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </a>
+        </header>
+        <!-- mobile sidebar -->
+        <div id="mobile__menu" class="overlay">
+            <a class="close" onclick="closeNav()">&times;</a>
+            <div class="overlay__content">
+                <a href="#story-container" onclick="closeNav()">Story</a>
+                <a href="#menu-container" onclick="closeNav()">Menu</a>
+                <a href="#about-container" onclick="closeNav()">About</a>
+            </div>
+        </div>
+        <script type="text/javascript" src="mobile.js"></script>
+
+        <!-- page content -->
+
+            <!-- homepage video -->
+            <div class="video_container">
+                <video autoplay muted loop id="desktop_myvideo">
+                    <source src="images/desktop.mp4" type="video/mp4">
+                </video>
+                <video autoplay muted loop id="mobile_myvideo">
+                    <source src="images/mobile.mp4" type="video/mp4">
+                </video>
+                <div class="overlaytext">
+                    <h1 id="brandname">PannaCotta.Chloe</h1>
+                    <a href="http://pannacottachloe.com/menu.html"><button class="order_btn">Order Now</button></a>
+                </div>
+            </div>
+
+            <!-- menu -->
+            <div id="menu-container">
+                <h2 class="titles">Our products</h2>
+                <div class="row">
+                    <div class="column">
+                        <a href="http://pannacottachloe.com/product_strawberry.html"><img src="images/DSC08342.jpg" alt="strawberry" style="width: 100%;"></a>
+                        <p class="des" style="padding-top: 1.5em; font-size: 20px; font-weight: 500;">草莓鮮奶酪</p>
+                        <p class="des" style="font-size: 20px; font-weight: 500; padding-bottom: 1.5em">$50</p>
+                    </div>
+                    <div class="column">
+                        <a href="http://pannacottachloe.com/product_milktea.html"><img src="images/DSC08390.jpg" alt="milktea" style="width: 100%;"></a>
+                        <p class="des" style="padding-top: 1.5em; font-size: 20px; font-weight: 500;">奶酪紅茶拿鐵</p>
+                        <p class="des" style="font-size: 20px; font-weight: 500; padding-bottom: 1.5em">$55</p>
+                    </div>
+                    <div class="column">
+                        <a href="http://pannacottachloe.com/product_original.html"><img src="images/DSC08345.jpg" alt="original" style="width: 100%;"></a>
+                        <p class="des"  style="padding-top: 1.5em; font-size: 20px; font-weight: 500;">原味奶酪</p>
+                        <p class="des" style="font-size: 20px; font-weight: 500; padding-bottom: 1.5em">$45</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- story -->
+            <div id="story-container">
+                <h2 class="titles">Our Story</h2>
+                <p class="des" style="font-weight: 600;">Life is short, make it sweet.</p>
+                <p class="des" style="font-family: 'Noto Sans TC', sans-serif;">
+                PannaCotta.Chloe成立於2020年的台北，以特色奶酪最具代表性，品嚐甜點一直都是一件享受的事，近年來人們偏好清爽不膩口的甜點，我們的奶酪使用小農鮮奶製成，不額外添加水及人工調味料，希望提供健康且較無負擔的甜點，讓為了夢想努力的人們，都能嚐到幸福的滋味。</p>
+            </div>
+
+            <!-- about -->
+            <div id="about-container">
+                <h2 class="titles">About us</h2>
+                <p class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime iusto delectus animi reprehenderit! Explicabo eaque vel qui voluptatem enim possimus. Saepe aut quos voluptates officiis at delectus velit pariatur eius.</p>
+            </div>
+
+            <!-- footer -->
+            <!-- <section>Footer Example</section> -->
+            <footer class="footer">
+                <div class="footer-left">
+                    <h3>PannaCotta<span>.Chloe</span></h3>
+                    <div class="footer-links">
+                        <a href="http://pannacottachloe.com/index.html" class="link1">Home</a>
+                        <a href="http://pannacottachloe.com/story.html">Story</a>
+                        <a href="http://pannacottachloe.com/menu.html">Menu</a>
+                        <a href="http://pannacottachloe.com/about.html">About</a>
+                        <a href="#">Contact</a>
+                    </div>
+
+                    <p class="footer-company">
+                        Copyright © 2020 PannaCotta.Chloe
+                    </p>
+                </div>
+
+                <div class="footer-center">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><span>NTU</span>Taipei,Taiwan</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>0912345678</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:chloe@gmail.com">chloe@gmail.com</a></p>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>About Pannacotta.chloe</span>
+                        PannaCotta.Chloe was established in Taipei in 2020. We hope to provide healthy desserts so that people who work hard for their dreams can taste happiness.
+                    </p>
+
+                    <div class="footer-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/pannacotta.chloe/?hl=zh-tw"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+            </footer>
+    </body>
+</html>

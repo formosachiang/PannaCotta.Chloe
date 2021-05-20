@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* homepage video */
+.video_container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#desktop_myvideo {
+    margin-bottom: 40px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#mobile_myvideo {
+    margin-bottom: 40px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: none;
+}
+  
+/* text on top of video */
+.overlaytext {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 80px;
+}
+
+#brandname {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 5.2vw;
+}
+  
+/* order now button */
+.order_btn {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 18px;
+    margin-top: 45px;
+    background-color: transparent;
+    color: white;
+    border: 3px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.order_btn:hover {
+    background-color: rgba(0,0,0,0.6);
+}
+
+#menu-container,
+#story-container,
+#about-container {
+    padding-top: 40px;
+}
+
+.titles {
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 0.6em;
+    font-weight: bold;
+}
+
+.row {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 30px 50px;
+}
+
+.column img {
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.des {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 46px;
+    margin: 0 auto;
+    width: 68%;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .overlaytext {
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    #brandname {
+        font-size: 10vw;
+    }
+
+    .order_btn {
+        font-size: 4vw;
+        margin-top: 20px;
+        padding: 6px 10px;
+    }
+
+    .row {
+        width: 74%;
+    }
+
+    .column {
+        width: 100%;
+        padding: 8px 8px;
+    }
+
+    .titles {
+        font-weight: bold;
+        font-size: 1.8em;
+    }
+    .des {
+        line-height: 38px;
+        width: 78%;
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    #desktop_myvideo {
+        display: none;
+    }
+
+    #mobile_myvideo {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+}
